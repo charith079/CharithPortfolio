@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charith's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('HomePage.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    .content {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: #ff5722;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background-color: #ff784e;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Welcome to Charith's Portfolio</h1>
+    <p>Discover my projects, skills, and journey.</p>
+    <a href="#get-started" class="btn">Get Started</a>
+  </div>
+</body>
+</html>
